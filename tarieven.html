@@ -35,19 +35,17 @@
     <title>Pricing</title>
   </head>
   <body>
-    <nav style="display: flex; justify-content: space-between">
-      <a href="./index.html" title="Homepage">
+
+
+       <nav style="display: flex; justify-content: space-between" class="navbar">
+      <a href="/" title="Homepage">
         <img
           src="./images/logo.jpg"
           class="logo"
           alt="Aga logo"
-          style="display: block"
+         
         />
-      </a>
-      <div class="menu-icon">
-  <i class="fas fa-bars"></i>
-  </div>
-<div class="menu">
+       
       <ul style="list-style-type: none; display: flex">
         <li style="margin-right: 1rem">
           <a href="/" title="Homepage">Home</a>
@@ -62,8 +60,9 @@
           <a href="/contact.html" title="Contact Aga">Contact</a>
         </li>
       </ul>
-</div>
     </nav>
+
+     
 
     <header><h1>Prices</h1></header>
 
@@ -137,6 +136,7 @@
     </footer>
 
     <script>
+
    $(document).ready(function(){
   $("#currency").change(function(){
     var selectedCurrency = $(this).val();
@@ -160,11 +160,6 @@
   });
 });
 
-$(document).ready(function(){
-    $(".menu-icon").click(function(){
-      $("nav ul").toggleClass("show");
-    });
-  });
 </script>
 
   </body>

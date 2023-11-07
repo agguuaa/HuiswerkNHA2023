@@ -130,16 +130,25 @@ footer {
   height: 50px;
 }
 
-nav ul.show {
-  display: flex;
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  background: #272142;
+  height: 3px;
+  width: 25px;
+  margin: 5px auto;
 }
 
 @media (max-width: 576px) {
-}
-
-@media (max-width: 576px) {
-  footer {
-    padding: 50px 70px;
+  body,
+  html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -150,20 +159,34 @@ nav ul.show {
     font-size: 42px;
   }
 
-  nav ul {
-    display: none;
+  p {
+    margin: 16px 16px;
+    font-size: 12px;
   }
 
-  p.github {
-    text-align: center;
+  footer {
+    padding-top: 30px;
+    margin: 0px;
   }
 
   .container {
-    width: 80%;
+    width: 70%;
     padding: 5px;
   }
 
+  .navbar {
+    padding: 1rem 1rem;
+  }
+
   .currency {
-    font-size: 30px;
+    font-size: 27px;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  #currency {
+    font-size: 24px;
   }
 }
