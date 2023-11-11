@@ -33,6 +33,10 @@ h2 {
   opacity: 0.8;
 }
 
+h3 {
+  margin: 0;
+}
+
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
@@ -152,6 +156,7 @@ header h2 {
   line-height: 27px;
   padding: 17px 30px;
   text-decoration: none;
+  margin-top: 3rem; /* Add this line */
 }
 
 .btn-branding-outline {
@@ -162,6 +167,7 @@ header h2 {
   line-height: 27px;
   padding: 12px 20px;
   text-decoration: none;
+  margin-top: 3rem; /* Add this line */
 }
 
 .logo {
@@ -226,22 +232,47 @@ nav li.active a {
 }
 
 footer {
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 12px;
+  margin: auto;
+  max-width: 100%;
   background-image: linear-gradient(
     rgba(185, 180, 206, 0.9),
     rgba(168, 160, 201, 0.9)
   );
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  padding: 90px 50px;
-  border-radius: 12px;
-  margin: auto;
-  max-width: 100%;
-  height: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.work-inquiry {
+  flex-basis: 45%;
+}
+
+.work-inquiry h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-me {
+  flex-basis: 45%;
+}
+
+.email-link {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  margin-bottom: 2rem;
 }
 
 .github {
   text-align: center;
+  margin-top: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -301,5 +332,15 @@ footer {
 
   .navbar {
     padding: 1rem 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .work-inquiry,
+  .contact-me {
+    display: none;
   }
 }
