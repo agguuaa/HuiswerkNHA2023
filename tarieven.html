@@ -7,15 +7,7 @@
       src="https://kit.fontawesome.com/0d6bc103f1.js"
       crossorigin="anonymous"
     ></script>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="./tarieven.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,21 +23,13 @@
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <title>Pricing</title>
   </head>
   <body>
-
-
-       <nav style="display: flex; justify-content: space-between" class="navbar">
+    <nav style="display: flex; justify-content: space-between" class="navbar">
       <a href="/" title="Homepage">
-        <img
-          src="./images/logo.jpg"
-          class="logo"
-          alt="Aga logo"
-         
-        />
-       
+        <img src="./images/logo.jpg" class="logo" alt="Aga logo" />
+      </a>
       <ul style="list-style-type: none; display: flex">
         <li style="margin-right: 1rem">
           <a href="/" title="Homepage">Home</a>
@@ -62,105 +46,129 @@
       </ul>
     </nav>
 
-     
-
-    <header><h1>Prices</h1></header>
+    <header>
+      <h1>Prices</h1>
+    </header>
 
     <main>
       <div>
-      <h2 id="hero">
-       <label for="currency" class="currency">Choose your currency</label>
+        <h2 id="hero">
+          <label for="currency" class="currency">Choose your currency</label>
         </h2>
-
- <select id="currency" name="currency" style="border-radius: 20px; color: var(--branding-color); border: 3px solid var(--branding-color); font-size: 18px; line-height: 27px; padding: 7px 12px; text-decoration: none; margin: 15px;">
- <option value="eur">EUR</option>
-  <option value="usd">USD</option>
-  <option value="gbp">GBP</option>
-</select>
-
-
-</div>
+        <select
+          id="currency"
+          name="currency"
+          style="
+            border-radius: 20px;
+            color: var(--branding-color);
+            border: 3px solid var(--branding-color);
+            font-size: 18px;
+            line-height: 27px;
+            padding: 7px 12px;
+            text-decoration: none;
+            margin: 15px;
+          "
+        >
+          <option value="eur">EUR</option>
+          <option value="usd">USD</option>
+          <option value="gbp">GBP</option>
+        </select>
+      </div>
+      <div>
         <div>
-          <div>
-            <table border="1" class="table">
-              <tr>
-                <td id="maincell" style="background-color: #fba1b7">
-                  <bold>Price</bold>
-                </td>
-                <td id="maincell" style="background-color: #ffdbaa">
-                  <bold>Service</bold>
-                </td>
-              </tr>
-              <tr>
-                <td id="cell1" style="background-color: #f5b4ca">
-                  from 500 EUR
-                </td>
-                <td id="cell2" style="background-color: #fae1bf">
-                  Web Application
-                </td>
-              </tr>
-
-              <tr>
-                <td id="cell3" style="background-color: #f7c5d2">
-                  from 350 EUR
-                </td>
-                <td id="cell4" style="background-color: #fae9d1">
-                  Responsive Web Development
-                </td>
-              </tr>
-              <tr>
-                <td id="cell5" style="background-color: #fff0f5">
-                  from 200 EUR
-                </td>
-                <td id="cell6" style="background-color: rgb(248, 238, 223)">
-                  Web Design
-                </td>
-              </tr>
-            </table>
-          </div>
-          <br />
-          <br />
-
-          <a href="contact.html" class="btn btn-branding"
-            >Need more information?</a
-          >
+          <table class="table">
+            <tr>
+              <td id="maincell" style="background-color: #fba1b7">
+                <strong>Price</strong>
+              </td>
+              <td id="maincell" style="background-color: #ffdbaa">
+                <strong>Service</strong>
+              </td>
+            </tr>
+            <tr>
+              <td id="cell1" style="background-color: #f5b4ca">from 500 EUR</td>
+              <td id="cell2" style="background-color: #fae1bf">
+                Web Application
+              </td>
+            </tr>
+            <tr>
+              <td id="cell3" style="background-color: #f7c5d2">from 350 EUR</td>
+              <td id="cell4" style="background-color: #fae9d1">
+                Responsive Web Development
+              </td>
+            </tr>
+            <tr>
+              <td id="cell5" style="background-color: #fff0f5">from 200 EUR</td>
+              <td id="cell6" style="background-color: rgb(248, 238, 223)">
+                Web Design
+              </td>
+            </tr>
+          </table>
         </div>
+        <br />
+        <br />
+        <a href="contact.html" class="btn btn-branding"
+          >Need more information?</a
+        >
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </main>
 
-    <footer>
-      <p class="github">
-        🤟 Open-sourced and made by ©
-        <a href="https://github.com/agguuaa/Huiswerk-Les-15">Aga Kuś</a>, 2023
+    <footer style="text-align: center">
+      <div style="display: block; justify-content: center; align-items: center">
+        <div style="flex-basis: 45%" class="work-inquiry">
+          <h3>
+            <a href="mailto:agakus@agakus.com" class="email-link"
+              >Let's work together!</a
+            >
+          </h3>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/agguuaa"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://instagram.com/agguuaaaaaa"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://facebook.com/agguuaa"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+      <p class="github" style="text-align: center">
+        🤟 Open-sourced and made by
+        <a href="https://github.com/agguuaa/Portfolio" class="text-muted mt-8"
+          >Aga Kuś</a
+        >
       </p>
     </footer>
 
     <script>
-
-   $(document).ready(function(){
-  $("#currency").change(function(){
-    var selectedCurrency = $(this).val();
-    if (selectedCurrency === "euro") {
-      $("#cell1").text("from 500 EUR");
-      $("#cell3").text("from 350 EUR");
-      $("#cell5").text("from 200 EUR");
-    } else if (selectedCurrency === "usd") {
-      $("#cell1").text("from 600 USD");
-      $("#cell3").text("from 450 USD");
-      $("#cell5").text("from 250 USD");
-    } else if (selectedCurrency === "gbp") {
-      $("#cell1").text("from 450 GBP");
-      $("#cell3").text("from 300 GBP");
-      $("#cell5").text("from 150 GBP");
-    } else if (selectedCurrency === "eur") {
-      $("#cell1").text("from 500 EUR");
-      $("#cell3").text("from 350 EUR");
-      $("#cell5").text("from 200 EUR");
-    }
-  });
-});
-
-</script>
-
+      $(document).ready(function () {
+        $("#currency").change(function () {
+          var selectedCurrency = $(this).val();
+          if (selectedCurrency === "euro") {
+            $("#cell1").text("from 500 EUR");
+            $("#cell3").text("from 350 EUR");
+            $("#cell5").text("from 200 EUR");
+          } else if (selectedCurrency === "usd") {
+            $("#cell1").text("from 600 USD");
+            $("#cell3").text("from 450 USD");
+            $("#cell5").text("from 250 USD");
+          } else if (selectedCurrency === "gbp") {
+            $("#cell1").text("from 450 GBP");
+            $("#cell3").text("from 300 GBP");
+            $("#cell5").text("from 150 GBP");
+          } else if (selectedCurrency === "eur") {
+            $("#cell1").text("from 500 EUR");
+            $("#cell3").text("from 350 EUR");
+            $("#cell5").text("from 200 EUR");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -8,6 +8,7 @@
 body {
   font-family: var(--default-font-family);
   text-align: center;
+  margin: 0;
 }
 
 header {
@@ -29,7 +30,8 @@ header h1 {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
@@ -50,6 +52,24 @@ h2 {
   font-family: var(--default-font-family);
 }
 
+h3 {
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: center;
+}
+
+table {
+  width: 85%;
+  height: 120px;
+  border-collapse: collapse;
+  margin-left: 100px;
+}
+
 .row {
   display: block;
   margin: 0 auto;
@@ -66,16 +86,23 @@ nav {
   padding: 20px;
 }
 
+/* Add these styles to file 1 */
 nav ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Align the items horizontally in the center */
 }
 
 nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
   margin-left: 15px;
+}
+
+/* Adjust the existing styles for nav in file 1 */
+nav {
+  padding: 20px;
+  background-color: transparent; /* Ensure the background is transparent */
 }
 
 nav a {
@@ -83,6 +110,7 @@ nav a {
   color: #272142;
   transition: all 100ms ease;
   font-size: 14px;
+  padding: 10px; /* Add padding to the navigation items for better spacing */
 }
 
 nav a:hover,
@@ -98,11 +126,11 @@ nav li.active a {
   line-height: 27px;
   padding: 17px 30px;
   text-decoration: none;
-  margin-bottom: 70px;
+  margin-bottom: 170px;
 }
 
 .btn-branding-outline {
-  border-radius: 4px;
+  border-radius: 30px;
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
   font-size: 18px;
@@ -111,35 +139,36 @@ nav li.active a {
   text-decoration: none;
 }
 
-.active a {
-  color: var(--branding-color);
-}
-
 footer {
+  text-align: center;
+  padding: 30px 30px;
+  border-radius: 12px;
+  margin: auto;
+  max-width: 100%;
   background-image: linear-gradient(
     rgba(185, 180, 206, 0.9),
     rgba(168, 160, 201, 0.9)
   );
+}
+
+footer a:hover,
+footer .active a {
+  color: honeydew;
+}
+
+.email-link {
+  text-decoration: none;
+  color: rgb(35, 36, 39);
+  opacity: 0.7;
+}
+
+.social-links {
+  margin: 2rem;
+}
+
+.github {
   text-align: center;
-  font-size: 18px;
-  color: white;
-  padding: 90px 50px;
-  border-radius: 12px;
-  margin: auto;
-  max-width: 100%;
-  height: 50px;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  background: #272142;
-  height: 3px;
-  width: 25px;
-  margin: 5px auto;
+  margin-top: 2rem;
 }
 
 @media (max-width: 576px) {
@@ -153,20 +182,24 @@ footer {
 
   h1 {
     font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 
-  h2 {
-    font-size: 42px;
+  h3 {
+    margin: 0;
   }
 
   p {
-    margin: 16px 16px;
-    font-size: 12px;
+    margin-bottom: 35px;
   }
 
   footer {
-    padding-top: 30px;
-    margin: 0px;
+    padding: 30px 0px;
+  }
+
+  .navbar {
+    padding: 1rem 1rem;
   }
 
   .container {
@@ -178,15 +211,58 @@ footer {
     padding: 1rem 1rem;
   }
 
-  .currency {
-    font-size: 27px;
+  main {
+    display: block;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
   }
 
   .table {
     font-size: 12px;
   }
 
+  .currency {
+    font-size: 27px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
+    margin: 8px;
+  }
+
+  .github {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
   #currency {
     font-size: 24px;
+  }
+
+  /* Adjust the existing styles for small screens in file 1 */
+  nav {
+    padding: 0; /* Remove padding to make the navigation full width */
+    background-color: transparent; /* Ensure the background is transparent */
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the items */
+  }
+
+  nav li {
+    margin: 10px 0; /* Add margin for spacing between items */
+  }
+
+  nav a {
+    padding: 10px; /* Add padding to the navigation items for better spacing */
   }
 }
